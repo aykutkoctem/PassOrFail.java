@@ -1,7 +1,4 @@
 package day41_CustomClass_Constructor;
-import utilities.Data;
-
-import  java.util.Arrays;
 
 import static utilities.Data.*;
 
@@ -20,5 +17,16 @@ public class ImportStatement {
         System.out.println("----------------------------------------------------------------");
         System.out.println(str3);
         System.out.println(str4);
+    }
+
+    public static class ConstructorsIntro {
+
+        public ConstructorsIntro(int a){
+            System.out.println("Constructor with ing arg");
+        }
+
+        public static void main(String[] args) {
+            new ConstructorsIntro(10);
+        }
     }
 }
