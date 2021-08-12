@@ -6,6 +6,10 @@ public class AccessModifiers {
  static int defaultVariable=200; // access modifier:default
  private static int privateVariable=200;
 
-
+    public static void main(String[] args) {
+        System.out.println(privateVariable);// private access modifier is reachable within same class
+        System.out.println(defaultVariable);//
+        System.out.println(publicVariable);
+    }
 
 }
