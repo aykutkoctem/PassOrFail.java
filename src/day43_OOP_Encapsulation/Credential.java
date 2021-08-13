@@ -3,6 +3,13 @@ package day43_OOP_Encapsulation;
 public class Credential {
     private String username, password;
 
+
+
+    public Credential(String username, String password) {
+        setUsername(username);
+        setPassword(password);
+    }
+
     public String getUsername() {
         return username;
     }
@@ -12,19 +19,30 @@ public class Credential {
     }
 
     public void setUsername(String username) {
-        boolean startWithLetter=Character.isLetter(username.charAt(0));
-        if (!startWithLetter || username.length()<5){
-            return;
+        boolean startsWithLetter = Character.isLetter(username.charAt(0));
+        if(!startsWithLetter){ // if first character of the user name is not a letter
+            return; // exit the method
+        }
+
+        if( username.length() < 5){ // if length of the username is less than 5
+            return; // exit
         }
 
         this.username = username;
     }
 
     public void setPassword(String password) {
-        if (!isStrongPassword(password)){ // if the given password is not a strong password
-            return; //exit the method
+        if(!isStrongPassword(password)){ // if the given password is not a strong password
+            return; // exit the method
         }
-        this.password=password;
+        this.password = password;
+    }
+
+    public String toString() {
+        return "Credentials{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     public static boolean isStrongPassword(String password){
@@ -65,4 +83,3 @@ requirements:
     password:
             1. MUST be a Strong password
  */
-
