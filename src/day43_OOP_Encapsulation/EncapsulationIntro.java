@@ -23,4 +23,6 @@ public class EncapsulationIntro {
         }
         this.password=password;
     }
+
+
 }

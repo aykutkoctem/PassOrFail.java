@@ -35,6 +35,7 @@ public class Credential {
         if(!isStrongPassword(password)){ // if the given password is not a strong password
             return; // exit the method
         }
+
         this.password = password;
     }
 

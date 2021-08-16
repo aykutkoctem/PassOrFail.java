@@ -17,7 +17,7 @@ public class Test {
 
         System.out.println(obj.getUsername());
         System.out.println(obj.getPassword());
-        obj.setUsername("H");
+        obj.setUsername("Aykut");
         obj.setPassword("123");
         System.out.println(obj.getUsername());
         System.out.println(obj.getPassword());

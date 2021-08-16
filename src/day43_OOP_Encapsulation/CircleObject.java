@@ -14,6 +14,7 @@ public class CircleObject {
         System.out.println(circle1.perimeter());
 
         Circle circle2 = new Circle(5);
+        System.out.println(circle2.area());
 
         System.out.println( circle1.equals(circle2) );
         System.out.println( circle1 == circle2);
